@@ -1,0 +1,69 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data and generated outputs
+data/raw/
+data/interim/
+data/qiime/
+data/picrust2/
+results/
+figures/
+outputs/
+frb_qiime/
+ricebran_results/
+ricebran_FMT_results/
+
+# Microbiome / QIIME / PICRUSt2 artifacts
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.qza
+*.qzv
+*.biom
+*.tre
+*.tsv.gz
+
+# Large or binary analysis files
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.h5
+*.h5ad
+*.npy
+*.npz
+*.parquet
+*.feather
+
+# Office / figure exports
+*.numbers
+*.xlsx
+*.xls
+*.docx
+*.pptx
+*.pdf
+*.png
+*.svg
+
+# Local settings
+.env
+local_config.toml

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ricebran-analysis"
+version = "0.2.0"
+description = "Reproducible FRB 16S rRNA predicted-metagenome analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+dependencies = [
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "pypdf",
+  "scikit-posthocs",
+  "scikit-learn",
+  "scipy",
+  "seaborn",
+  "statsmodels",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+]
+
+[project.urls]
+Repository = "https://github.com/Yuki-Saito-UOS/frb-16s-picrust2-analysis"
+
+[project.scripts]
+ricebran-analysis = "ricebran_analysis.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,36 @@
+[project]
+target = "FRB"
+raw_dirname = "ricebran_raw"
+qiime_dirname = "ricebran_QIIME"
+results_dirname = "ricebran_results"
+picrust2_dirname = "picrust2_out"
+docker_raw_dir = "/work/ricebran_raw"
+
+[groups]
+control = ["control1", "control2", "control3", "control4"]
+ricebran = ["ricebran1", "ricebran2", "ricebran3", "ricebran4"]
+Fermented_ricebran = ["Fermented_ricebran1", "Fermented_ricebran2", "Fermented_ricebran3", "Fermented_ricebran4"]
+
+[thresholds]
+p_value = 0.05
+effect = 0.20
+top_n = 30
+
+[qiime2.dada2]
+trim_left_f = 0
+trim_left_r = 0
+trunc_len_f = 290
+trunc_len_r = 290
+n_threads = 4
+
+[qiime2.feature_filter]
+min_frequency = 10
+min_samples = 2
+
+[qiime2.rarefaction]
+# rarefaction を使う場合、alpha-rarefaction.qzv を確認してから設定する。
+sampling_depth = 2700
+
+[picrust2]
+# 高 NSTI の予測を除外する場合だけ設定する。
+# max_nsti = 2.0
