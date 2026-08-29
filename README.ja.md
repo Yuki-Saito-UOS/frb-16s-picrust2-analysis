@@ -2,6 +2,8 @@
 
 このリポジトリは、対照群（Ctrl）、米糠群（RB）、発酵米糠群（FRB）の糞便16S rRNA解析およびPICRUSt2による予測メタゲノム解析を再現するための公開コードです。公開範囲はFRBの16S/PICRUSt2解析と、主となる菌叢組成・予測機能出力に限定します。
 
+**関連研究:** *Rice bran fermented with fish-processing-associated microorganisms enhances intestinal mucus formation through modulation of the gut microbiota*. 本リポジトリが扱うのは、この研究のうちFRBの16S rRNA／PICRUSt2解析部分のみです。
+
 ## 公開内容
 
 - QIIME2/PICRUSt2の解析コードと設定。
