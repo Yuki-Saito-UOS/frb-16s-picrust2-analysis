@@ -1,21 +1,20 @@
 # Data Policy
 
-このディレクトリには、公開可能な処理済みデータと配置ルールを置きます。
+This directory contains the public processed data and its storage policy.
 
-`processed/` には、論文の Figure 4・5 の再作図に必要な匿名化済み集計 CSV を収録します。
-各ファイルの値は、公開対象のFRB解析で用いたQIIME2/PICRUSt2出力から生成されています。`sample_id` は群内の匿名化ラベルであり、個体IDではありません。
+`processed/` contains the anonymized summary CSV files required to reproduce Figures 4 and 5. Values are derived from the QIIME2 and PICRUSt2 outputs used for the public FRB analysis. `sample_id` is an anonymized within-study label, not an individual identifier.
 
-Git 管理しないもの:
+The following files are not tracked by Git:
 
 - raw FASTQ
 - QIIME2 artifacts (`*.qza`, `*.qzv`)
 - PICRUSt2 outputs
-- 公開対象の図に使用していない解析結果 TSV
-- 図表ファイル
+- Analysis-result TSV files not used for the public figures.
+- Figure files.
 
-既存データを使う場合は `scripts/run_analysis.py --base-dir <analysis-root>` のように外部ディレクトリを指定してください。
+For locally retained inputs, specify an external directory, for example `scripts/run_analysis.py --base-dir <analysis-root>`.
 
-公開CSVは次で生成します。
+Generate the public CSV files with:
 
 ```bash
 PYTHONPATH=src python3 scripts/export_public_processed_data.py \
@@ -24,4 +23,4 @@ PYTHONPATH=src python3 scripts/export_public_processed_data.py \
   --results-dir <analysis-root>/ricebran_results
 ```
 
-論文公開時は、生 FASTQ の公開 accession、archived code DOI を `docs/data_availability.md` に記録します。
+Raw FASTQ files are not part of this public archive. Record the archived-code DOI in `docs/data_availability.md` after the Zenodo release.

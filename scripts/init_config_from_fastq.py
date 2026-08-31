@@ -114,11 +114,11 @@ def write_config(
             "min_samples = 2",
             "",
             "[qiime2.rarefaction]",
-            "# rarefaction を使う場合、alpha-rarefaction.qzv を確認してから設定する。",
+            "# Confirm alpha-rarefaction.qzv before setting the sampling depth.",
             "# sampling_depth = 10000",
             "",
             "[picrust2]",
-            "# 高 NSTI の予測を除外する場合だけ設定する。",
+            "# Set this only when excluding predictions with high NSTI values.",
             "# max_nsti = 2.0",
             "",
         ]

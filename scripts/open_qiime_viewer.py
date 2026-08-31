@@ -45,21 +45,21 @@ def main() -> None:
     print(f"- url: {QIIME2_VIEW_URL}")
     print(f"- qzv: {qzv}")
     print("")
-    print("ブラウザで QIIME2 View が開いたら、上の .qzv ファイルをドラッグ&ドロップして確認してください。")
-    print("外部サイトへのアップロードになるため、自動アップロードは行いません。")
-    print("macOS では Finder、Windows では Explorer、Linux では既定のファイルマネージャを開きます。")
+    print("When QIIME2 View opens, drag and drop the .qzv file shown above to inspect it.")
+    print("This would upload the file to an external website, so the script does not upload it automatically.")
+    print("The script opens Finder on macOS, Explorer on Windows, or the default file manager on Linux.")
 
     if not args.no_folder:
         opened_folder = open_qzv_folder(qzv)
         if not opened_folder:
             print("")
-            print("フォルダを自動で開けませんでした。上の .qzv パスを手動で開いてください。")
+            print("Could not open the folder automatically. Open the .qzv path shown above manually.")
 
     if not args.no_browser:
         opened = webbrowser.open(QIIME2_VIEW_URL)
         if not opened:
             print("")
-            print("ブラウザを自動で開けませんでした。上の URL を手動で開いてください。")
+            print("Could not open a browser automatically. Open the URL shown above manually.")
 
 
 if __name__ == "__main__":
