@@ -20,8 +20,8 @@ Raw FASTQ files, QIIME2 artifacts, PICRUSt2 intermediate outputs, source sample 
 
 The sequencing service, QIIME2 reanalysis, PICRUSt2 inference, transformation, statistical analysis, and figure definitions are documented in [`docs/main_figures_methods_and_legends.md`](docs/main_figures_methods_and_legends.md).
 
-- Figure 4: group-mean resolved-taxon composition and four targeted relative-abundance panels.
-- Figure 5: five low-P predicted MetaCyc pathways and FRB taxon contributions to chorismate metabolism and L-tryptophan biosynthesis.
+- Figure 4: Effects of FRB consumption on the gut microbiota.
+- Figure 5: Predicted changes in microbial metabolic functions associated with FRB consumption.
 
 PICRUSt2 results represent predicted microbial functional potential, not direct measurements of metabolites, pathway flux, enzyme activity, or host responses.
 
