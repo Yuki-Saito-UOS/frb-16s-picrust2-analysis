@@ -1,9 +1,8 @@
 # Reproducible FRB 16S rRNA Predicted-Metagenome Analysis
 
-This repository contains the public computational workflow for fecal 16S rRNA and PICRUSt2 predicted-metagenome analyses of control (Ctrl), rice bran (RB), and fermented rice bran (FRB) groups. The scope is limited to the FRB 16S/PICRUSt2 analysis and its primary community-composition and predicted-function outputs.
+This repository contains the public computational workflow for fecal 16S rRNA and PICRUSt2 predicted-metagenome analyses of control (Ctrl), rice bran (RB), and fermented rice bran (FRB) groups. 
 
-**Associated study:** *Rice bran fermented with fish-processing-associated microorganisms enhances intestinal mucus formation through modulation of the gut microbiota*. This repository contains only the FRB 16S rRNA and PICRUSt2 analysis component of that study.
-
+**Associated study:** *Rice bran fermented with fish-processing-associated microorganisms enhances intestinal mucus formation through modulation of the gut microbiota*. 
 ## Public contents
 
 - QIIME2/PICRUSt2 workflow code and configuration.
