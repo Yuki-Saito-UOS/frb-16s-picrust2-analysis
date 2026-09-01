@@ -6,7 +6,7 @@ This document defines the public FRB 16S rRNA and predicted-metagenome workflow 
 
 ### 16S rRNA sequence processing and community composition analysis
 
-Fresh fecal samples were stored at -80 degrees C until analysis. DNA extraction, amplification, and V3-V4 16S rRNA gene sequencing were performed by TechnoSuruga Laboratory Co., Ltd. (Shizuoka, Japan). The V3-V4 region was amplified with Pro341F and Pro805R primers, dual-indexed libraries with 8-bp barcodes were prepared, and paired-end sequencing was performed with a MiSeq i100 Series system using the MiSeq i100 Series 25M Reagent Kit (600 cycles; Illumina). The service workflow removed primers with Cutadapt version 3.5, merged read pairs with fastq-join version 1.3.1, retained joined reads with at least 99% of bases at Q20 or higher, and removed chimeras with USEARCH version 11.0.667.
+Fresh fecal samples were stored at -80 degrees C until analysis. DNA extraction, amplification, and V3-V4 16S rRNA gene sequencing were performed by TechnoSuruga Laboratory Co., Ltd. (Shizuoka, Japan). The V3-V4 region was amplified with Pro341F and Pro805R primers, dual-indexed libraries with 8-bp barcodes were prepared, and paired-end sequencing was performed with a MiSeq  system using the MiSeq  25M Reagent Kit v3 (600 cycles; Illumina). The service workflow removed primers with Cutadapt version 1.1.8, merged read pairs with fastq-join version 1.3.1, retained joined reads with at least 99% of bases at Q20 or higher, and removed chimeras with USEARCH version 6.1.544_i86.
 
 The public computational workflow starts from the delivered paired-end FASTQ files and analyzes control, rice bran (RB), and fermented rice bran (FRB) groups, with four mice per group. Reads were imported into QIIME 2 using manifest files generated from the analysis configuration. Denoising used DADA2 with `trim_left_f = 0`, `trim_left_r = 0`, `trunc_len_f = 290`, `trunc_len_r = 290`, and four threads. Taxonomy was assigned with a SILVA 138 Naive Bayes classifier compatible with the QIIME 2 environment, and the feature table was collapsed at genus level. Representative sequences and feature tables were exported for functional prediction. Figure 4 uses the resulting genus-level relative-abundance table across all panels.
 
@@ -22,7 +22,7 @@ Stratified PICRUSt2 pathway contributions (`path_abun_contrib.tsv.gz`) were used
 
 ### Figure 4. Fermented rice bran alters the intestinal microbial community composition.
 
-Group-mean relative abundance of the 15 most abundant resolved taxa; remaining taxa are grouped as `Other`. Lower panels show per-sample relative abundances of Lactobacillaceae, A2, Lachnospiraceae_NK4A136_group, and Lachnospiraceae_UCG-006. Points represent individual samples. Horizontal bars and asterisks indicate unadjusted Kruskal-Wallis `p < 0.05` across the three groups.
+Group-mean relative abundance of the 20 most abundant resolved taxa; remaining taxa are grouped as `Other`. Lower panels show per-sample relative abundances of Lactobacillaceae, A2, Lachnospiraceae_NK4A136_group, and Lachnospiraceae_UCG-006. Points represent individual samples. Horizontal bars and asterisks indicate unadjusted Kruskal-Wallis `p < 0.05` across the three groups.
 
 Output: `figures/figure4_16s_community_structure.pdf`.
 
