@@ -9,6 +9,13 @@ date-released: "2026-09-01"
 license: "MIT"
 repository-code: "https://github.com/Yuki-Saito-UOS/frb-16s-picrust2-analysis"
 abstract: "QIIME2 and PICRUSt2 workflow with anonymized processed data for reproducible FRB 16S rRNA community and predicted-metagenome analysis."
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22227745"
+    description: "Concept DOI for all archived versions of this repository."
+  - type: doi
+    value: "10.5281/zenodo.22227746"
+    description: "Version DOI for v0.2.0."
 references:
   - type: article
     title: "Rice bran fermented with fish-processing-associated microorganisms enhances intestinal mucus formation through modulation of the gut microbiota"

@@ -78,5 +78,7 @@ PYTHONPATH=src python3 scripts/export_public_processed_data.py \
 - [`docs/data_availability.md`](docs/data_availability.md): public-data boundary and identifiers.
 - [`docs/release_checklist.md`](docs/release_checklist.md): publication-release checks.
 - [`CITATION.cff`](CITATION.cff): citation metadata.
+- Zenodo concept DOI: [`10.5281/zenodo.22227745`](https://doi.org/10.5281/zenodo.22227745).
+- Zenodo version DOI (`v0.2.0`): [`10.5281/zenodo.22227746`](https://doi.org/10.5281/zenodo.22227746).
 
 Use a versioned GitHub Release or its Zenodo archive when citing this software snapshot.
