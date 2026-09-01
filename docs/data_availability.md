@@ -8,7 +8,7 @@ Before citing this repository, archive a fixed GitHub release in Zenodo or anoth
 
 - Code repository: `https://github.com/Yuki-Saito-UOS/frb-16s-picrust2-analysis`
 - Archived code concept DOI: [`10.5281/zenodo.22227745`](https://doi.org/10.5281/zenodo.22227745)
-- Archived code version DOI (`v0.2.0`): [`10.5281/zenodo.22227746`](https://doi.org/10.5281/zenodo.22227746)
+- Prior archived code version DOI (`v0.2.0`): [`10.5281/zenodo.22227746`](https://doi.org/10.5281/zenodo.22227746)
 - Raw 16S rRNA sequencing reads: not publicly released with this code archive.
 - Public processed figure datasets: `data/processed/`
 
