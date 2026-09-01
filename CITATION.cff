@@ -4,7 +4,7 @@ title: "Reproducible FRB 16S rRNA predicted-metagenome analysis"
 authors:
   - family-names: "Saito"
     given-names: "Yuki"
-version: "0.2.0"
+version: "0.2.1"
 date-released: "2026-09-01"
 license: "MIT"
 repository-code: "https://github.com/Yuki-Saito-UOS/frb-16s-picrust2-analysis"
