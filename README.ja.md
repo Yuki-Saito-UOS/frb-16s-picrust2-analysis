@@ -78,5 +78,3 @@ PYTHONPATH=src python3 scripts/export_public_processed_data.py \
 - [`docs/release_checklist.md`](docs/release_checklist.md): 公開リリース前の確認項目。
 - [`CITATION.cff`](CITATION.cff): 引用情報。
 - Zenodo concept DOI: [`10.5281/zenodo.22227745`](https://doi.org/10.5281/zenodo.22227745)。
-
-引用時は、固定したGitHub ReleaseまたはZenodo archiveを使用してください。
