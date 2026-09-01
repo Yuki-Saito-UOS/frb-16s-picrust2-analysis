@@ -5,7 +5,7 @@ authors:
   - family-names: "Saito"
     given-names: "Yuki"
 version: "0.2.0"
-date-released: "2026-08-29"
+date-released: "2026-09-01"
 license: "MIT"
 repository-code: "https://github.com/Yuki-Saito-UOS/frb-16s-picrust2-analysis"
 abstract: "QIIME2 and PICRUSt2 workflow with anonymized processed data for reproducible FRB 16S rRNA community and predicted-metagenome analysis."
